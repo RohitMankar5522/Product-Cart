@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chappal Shop </title>
+    <style>
+        body{
+            background-color:salmon;
+            margin: 70px;        
+        }
+        .heading{
+            text-align: center;
+            color:red;
+            font-style: italic;
+        }
+        #parent{
+            display:flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            margin-bottom: 50px;
+        }
+        .main-heading{
+            text-align: center;
+            color: yellow;    
+            box-shadow: orange;
+            font-style: italic;
+            text-shadow: 5px 5px 10px darkorange;
+        }
+        .part{
+            text-align: center;
+            height: 450px;
+            width: 300px;
+            border: 3px orange;
+            border-radius: 50px;
+            box-shadow: 2px 2px 5px red;
+            background-color: rgb(106, 247, 221);
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #box1{
+            display:flex;
+            justify-content: end;
+        }
+        .btn-action{
+               border-right-style: solid;
+               border-right-color:darkmagenta;
+               border-top-color:chartreuse;
+               border-left-color: red;
+               border-bottom-color:skyblue;
+               border-width: 4px;
+               border-radius:  20px 0 20px 0;
+               padding:10px;
+               width: 250px;
+               box-shadow:2px 2px 20px red;
+        }
+        .btn-action:hover{
+               border-right-style: solid;
+               border-right-color: black;
+               border-top-color: aqua;
+               border-left-color: darkcyan;
+               border-bottom-color:salmon;
+               border-width: 4px;
+               border-radius: 0 20px 0 20px;
+               padding:10px;
+               width: 250px;
+               box-shadow:3px 3px 25px goldenrod;
+        }
+
+    </style>
+
+
+
+
+<script>
+    let count = 0;
+        function inc()
+        {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        function reset()
+        {
+            count = 0;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        function dec()
+        {
+            count--;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        
+</script>
+</head>
+<body>
+    <h1 class="main-heading">Comfy Footware</h1>
+    <div id="parent">
+        <div class="part">
+            <h1 class="heading">Kolhapuri</h1>
+            <h3 class="heading"><del>₹900</del> ₹699</h3>
+            <img src="kolhapuri chappal.png" height="250px" width="250px" alt="">
+            <h1 id="counter">0</h1>
+            <button onClick="inc()">+</button>
+            <button onclick="reset()">None</button>
+            <button onclick="dec()">-</button>
+            <a href="kolhapuri.html"><h1><button class="btn-action">Click Here To Order</button></h1></a>
+        </div>
+
+        <div class="part">
+            <h1 class="heading">Slipper</h1>
+            <h3 class="heading"><del>₹450</del> ₹299</h3>
+            <img src="slipper.jpg" height="250px" width="250px" alt="">
+            <h1 id="counter">0</h1>
+            <button onClick="inc()">+</button>
+            <button onclick="reset()">None</button>
+            <button onclick="dec()">-</button>
+            <a href="slipper.html"><h1><button class="btn-action">Click Here To Order</button></h1></a>
+
+           
+        </div>
+
+        <div class="part">
+            <h1 class="heading">Sandel</h1>
+            <h3 class="heading"><del>₹800</del> ₹599</h3>
+            <img src="sandal.png" height="250px" width="250px" alt="">
+            <h1 id="counter">0</h1>
+            <button onClick="inc()">+</button>
+            <button onclick="reset()">None</button>
+            <button onclick="dec()">-</button>
+            <a href="sandal.html"><h1><button class="btn-action">Click Here To Order</button></h1></a>
+        </div>
+    </div>
+
+    <div id="box1">
+        <a href="tel:+917709637165"><img src="call.png" alt=""></a>&nbsp;&nbsp;&nbsp;
+        <a href="mailto:rohitmankar5522@gmail.com"><img src="mail.png" alt=""></a>
+    </div>
+    
+</body>
+</html>
